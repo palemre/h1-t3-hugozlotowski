@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0; }
+  body header {
+    background-color: black;
+    padding: 5px 0; }
+    body header .header-navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      color: white; }
+      body header .header-navbar nav {
+        display: flex;
+        flex-direction: row; }
+        body header .header-navbar nav .header-site-title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px; }
+        body header .header-navbar nav .header-social {
+          display: inline-block;
+          margin: auto 0;
+          vertical-align: middle; }
+          body header .header-navbar nav .header-social img {
+            vertical-align: middle; }
+    body header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex; }
+      body header ul li {
+        margin: 0 20px;
+        /* SOULIGNEMENT DE LA PAGE ACTIVE A VERIFIER
+        &.active-link>a {
+        	border-bottom: 1px solid white;
+        	padding-bottom:1px;
+        }
+        */ }
+        body header ul li a {
+          text-decoration: none;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          text-align: center;
+          display: block;
+          color: white; }
+    @media screen and (max-width: 990px) {
+      body header .hidden {
+        display: none; } }
+  body .hide {
+    display: none; }
+  body .wrapper .main-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    body .wrapper .main-container .photo-top {
+      display: flex;
+      flex-direction: column; }
+      body .wrapper .main-container .photo-top .photo-top_title {
+        display: flex;
+        justify-content: center; }
+        body .wrapper .main-container .photo-top .photo-top_title h1 span {
+          display: inline-block;
+          padding-bottom: 8px;
+          border-bottom: 2px solid black; }
+      body .wrapper .main-container .photo-top .research-filter {
+        margin-bottom: 5%; }
+        body .wrapper .main-container .photo-top .research-filter select {
+          border: none;
+          background: white; }
+        body .wrapper .main-container .photo-top .research-filter #select-year {
+          margin: 0 20px; }
+    body .wrapper .main-container .photo-body {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      body .wrapper .main-container .photo-body.delete-space-between {
+        justify-content: flex-start; }
+      body .wrapper .main-container .photo-body .row-photo_frame {
+        width: 30%;
+        margin-bottom: 5%;
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        position: relative;
+        	/*
+        	&:nth-child(3n) {
+        	margin-right: 0;
+        }
+        */ }
+        body .wrapper .main-container .photo-body .row-photo_frame.add-margin {
+          margin-right: 3%; }
+        body .wrapper .main-container .photo-body .row-photo_frame .image-text-hover {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center; }
+        body .wrapper .main-container .photo-body .row-photo_frame:hover .image-hover {
+          opacity: 0.2; }
+        body .wrapper .main-container .photo-body .row-photo_frame:hover .image-text-hover {
+          opacity: 1; }
+        body .wrapper .main-container .photo-body .row-photo_frame .image-text {
+          font-size: 1rem;
+          padding: 3px 8px; }
+        body .wrapper .main-container .photo-body .row-photo_frame img {
+          max-width: 100%; }
+      @media screen and (max-width: 800px) {
+        body .wrapper .main-container .photo-body .row-photo_frame {
+          width: 45%; } }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 0.7rem; }
+  footer .footer-social {
+    margin: 10px 0; }
+  footer span:nth-child(3) {
+    margin-bottom: 8px; }
+  footer a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 6px; }
+
+/*# sourceMappingURL=style-photo.css.map */
